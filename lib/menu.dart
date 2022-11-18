@@ -5,6 +5,7 @@ import 'package:sesiones/sesion5/home5.dart';
 import 'package:sesiones/sesion6/screen/home6screen.dart';
 import 'package:sesiones/sesion7/actividad7/interfaz.dart';
 import 'package:sesiones/sesion7/screen/home7screen.dart';
+import 'package:sesiones/sesion8/screen/menupage.dart';
 
 class Menuwidget extends StatelessWidget {
   const Menuwidget({super.key});
@@ -65,6 +66,15 @@ class Menuwidget extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const Interfaz7()),
+                );
+              },
+            ),
+            buttonWidget(
+              name: 'Sesion 8',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MenuPage()),
                 );
               },
             ),

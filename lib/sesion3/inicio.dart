@@ -68,16 +68,16 @@ class _IndexSesion3State extends State<IndexSesion3> {
                   showCupertinoDialog(
                     context: context,
                     builder: (context) => CupertinoAlertDialog(
-                      title: Text('title'),
-                      content: Text('content'),
+                      title: const Text('title'),
+                      content: const Text('content'),
                       actions: <Widget>[
                         if ('cancelActionText' != null)
                           CupertinoDialogAction(
-                            child: Text('Cancelar'),
+                            child: const Text('Cancelar'),
                             onPressed: () => Navigator.of(context).pop(false),
                           ),
                         CupertinoDialogAction(
-                          child: Text('Aceptar'),
+                          child: const Text('Aceptar'),
                           onPressed: () => Navigator.of(context).pop(true),
                         ),
                       ],
@@ -195,7 +195,7 @@ class _IndexSesion3State extends State<IndexSesion3> {
                   width: 300,
                   height: 600,
                   child: Padding(
-                    padding: EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.all(20.0),
                     child: Column(
                       children: [
                         CircleAvatar(
