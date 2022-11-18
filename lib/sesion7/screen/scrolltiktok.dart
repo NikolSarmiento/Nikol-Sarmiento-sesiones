@@ -76,13 +76,11 @@ class _ScrollTikTokState extends State<ScrollTikTok> {
   Controller? testingController;
 
   @override
-  Void initState() {
-    controller = widget.testingController ?? Controller()
+  void initState() {
+    controller = testingController ?? Controller()
       ..addListener((event) {
         _handleCallbackEvent(event.direction, event.success);
       });
-
-    // controller.jumpToPosition(4);
     super.initState();
   }
 
