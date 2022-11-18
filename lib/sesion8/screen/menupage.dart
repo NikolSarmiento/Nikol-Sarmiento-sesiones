@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sesiones/sesion8/screen/amigospage.dart';
 import 'package:sesiones/sesion8/screen/bandejapage.dart';
 import 'package:sesiones/sesion8/screen/homepage.dart';
+import 'package:sesiones/sesion8/screen/perfilpage.dart';
 
 class MenuPage extends StatefulWidget {
   const MenuPage({super.key});
@@ -19,6 +20,7 @@ class _MenuPageState extends State<MenuPage> {
     Text('data3'),
     BandejaPage(),
     Text('data5'),
+    BlurScreen(),
   ];
 
   void _onItemTapped(int index) {
